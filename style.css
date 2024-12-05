@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.container{
+    text-align: center;
+
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    /* flex-direction: column; */
+
+}
+.container h1{
+    color: azure;
+    font-size: 2.5em;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 1.2rem;
+
+
+}
+input{
+    width: 75%;
+    height: 6.5vh;
+    /* border-radius: px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    padding-left: 1em;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+
+}
+.btn-search{
+    height: 6.5vh;
+    width: 25%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: aquamarine;
+    border:none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.error-msg{
+    color: red;
+    margin-top: .5em;
+    font-size:1.1em;
+}
+.massege{
+    width: 23.2vw;
+    height: 40vh;
+   margin-top: 4.5vh;
+     /*padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 10px;
+    background-color: azure; */
+    display: none;
+}
+.massege img{
+width:6em;
+height:6em;
+border-radius: 50%;
+
+}
+.massege .btn-profile{
+    width: 40%;
+    background-color: aquamarine;
+    color: black;
+    text-decoration: none;
+    height: 5vh;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    /* padding-top: .4em; */
+    border-radius: 10px;
+}
+.massege a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1200px) {
+    .container{    
+        width: 40vw;
+    }
+    .search{
+        width: 80%;    
+    }
+    input{
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .btn-search{
+        width: 40%;
+    }
+    
+    .massege{
+        width: 30vw;
+        height: 40vh;
+    }
+    .massege img{
+    width:5em;
+    height:5em;
+    
+    }
+    .massege .btn-profile{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .container{    
+        width: 52vw;
+    }
+
+
+    .massege{
+        width: 40vw;
+    }
+   
+@media screen and (max-width: 480px){
+  
+    .container{    
+        width: 100vw;
+    }
+    .search{
+        width: 80%;    
+    }
+    input{
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .btn-search{
+        width: 40%;
+    }
+    
+    .massege{
+        width: 75vw;
+        height: 40vh;
+    }
+    .massege img{
+    width:5em;
+    height:5em;
+    
+    }
+    .massege .btn-profile{
+        width: 60%;
+    }
+}
